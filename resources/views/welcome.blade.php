@@ -130,3 +130,9 @@
         </div>
     </body>
 </html>
+
+<?php
+use App\Models\Professions;
+
+$test = Professions::find(1);
+echo $test;
