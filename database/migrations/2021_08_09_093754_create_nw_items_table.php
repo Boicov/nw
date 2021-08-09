@@ -15,7 +15,7 @@ class CreateNwItemsTable extends Migration
     {
         Schema::create('nw_professions', function (Blueprint $table) {
             $table->integer('id')->unique();
-            $table->integer('profession')->unique();
+            $table->string('profession')->unique();
         });
 
         Schema::create('nw_items', function (Blueprint $table) {
