@@ -40,7 +40,7 @@ class CreateNwItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nw_professions');
         Schema::dropIfExists('nw_items');
+        Schema::dropIfExists('nw_professions');
     }
 }
